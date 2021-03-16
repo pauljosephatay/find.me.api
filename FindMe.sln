@@ -7,21 +7,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8892E347-336
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{0CF7AC86-043C-4FB9-982B-D0AE7542EAD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find.Me.Api", "src\Application\Find.Me.Api\Find.Me.Api.csproj", "{6EF488AF-BAFD-4D67-90A6-00E491F5AB8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Find.Me.Api", "src\Application\Find.Me.Api\Find.Me.Api.csproj", "{6EF488AF-BAFD-4D67-90A6-00E491F5AB8F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{90769968-158E-42C9-A8F4-5AEFB883E971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find.Me.Api.Repository", "src\Infrastructure\Find.Me.Api.Repository\Find.Me.Api.Repository.csproj", "{716F84D1-8A30-45D6-93D3-E1C3995489AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Find.Me.Api.Repository", "src\Infrastructure\Find.Me.Api.Repository\Find.Me.Api.Repository.csproj", "{716F84D1-8A30-45D6-93D3-E1C3995489AA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{810AA9F5-95BC-4DEF-9A60-2CC263A32F41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find.Me.Domain", "src\Domain\Find.Me.Domain\Find.Me.Domain.csproj", "{F4BB3B15-026E-4E65-9F1F-E9BBBADC29FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Find.Me.Domain", "src\Domain\Find.Me.Domain\Find.Me.Domain.csproj", "{F4BB3B15-026E-4E65-9F1F-E9BBBADC29FA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{885F0484-C497-4F63-86BF-A9B37844792B}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E49F72AA-E11E-4A24-A1F0-04DB4604F4AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E8C89847-2A2A-4EAB-A2FA-2E4619A4B5F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find.Me.Api.Repository.Tests", "test\Infrastructure\Find.Me.Api.Repository.Tests\Find.Me.Api.Repository.Tests.csproj", "{AD702FC0-E3F1-4D48-982E-B081EEF420A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{E778413E-2497-45C6-9368-ABADEABE4BFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find.Me.Api.Tests", "test\Application\Find.Me.Api.Tests\Find.Me.Api.Tests.csproj", "{9D00B828-63FC-46C3-A8F5-6FCDD92546F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +51,14 @@ Global
 		{F4BB3B15-026E-4E65-9F1F-E9BBBADC29FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4BB3B15-026E-4E65-9F1F-E9BBBADC29FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4BB3B15-026E-4E65-9F1F-E9BBBADC29FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD702FC0-E3F1-4D48-982E-B081EEF420A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD702FC0-E3F1-4D48-982E-B081EEF420A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD702FC0-E3F1-4D48-982E-B081EEF420A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD702FC0-E3F1-4D48-982E-B081EEF420A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D00B828-63FC-46C3-A8F5-6FCDD92546F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D00B828-63FC-46C3-A8F5-6FCDD92546F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D00B828-63FC-46C3-A8F5-6FCDD92546F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D00B828-63FC-46C3-A8F5-6FCDD92546F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +70,10 @@ Global
 		{716F84D1-8A30-45D6-93D3-E1C3995489AA} = {90769968-158E-42C9-A8F4-5AEFB883E971}
 		{810AA9F5-95BC-4DEF-9A60-2CC263A32F41} = {8892E347-3361-4CA3-98EA-092B473DD107}
 		{F4BB3B15-026E-4E65-9F1F-E9BBBADC29FA} = {810AA9F5-95BC-4DEF-9A60-2CC263A32F41}
+		{E8C89847-2A2A-4EAB-A2FA-2E4619A4B5F0} = {E49F72AA-E11E-4A24-A1F0-04DB4604F4AE}
+		{AD702FC0-E3F1-4D48-982E-B081EEF420A2} = {E8C89847-2A2A-4EAB-A2FA-2E4619A4B5F0}
+		{E778413E-2497-45C6-9368-ABADEABE4BFC} = {E49F72AA-E11E-4A24-A1F0-04DB4604F4AE}
+		{9D00B828-63FC-46C3-A8F5-6FCDD92546F3} = {E778413E-2497-45C6-9368-ABADEABE4BFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2730609-6F2E-47DE-BEAC-F7421F77EB1C}
